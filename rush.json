@@ -9,7 +9,7 @@
     "preventManualShrinkwrapChanges": true,
     "useWorkspaces": false
   },
-  "nodeSupportedVersionRange": ">=12.13.0 <15.0.0",
+  "nodeSupportedVersionRange": ">=10.0.0 <15.0.0",
   "suppressNodeLtsWarning": true,
   "ensureConsistentVersions": false,
   "projectFolderMinDepth": 2,
