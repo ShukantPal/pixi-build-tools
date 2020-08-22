@@ -1,4 +1,4 @@
-export.globals = {
+exports.globals = {
     '@pixi/filter-adjustment': 'PIXI.filters',
     '@pixi/filter-advanced-bloom': 'PIXI.filters',
     '@pixi/filter-ascii': 'PIXI.filters',

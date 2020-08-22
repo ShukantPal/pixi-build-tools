@@ -1,3 +1,3 @@
 const { main } = require("./main");
 
-exports.default = main();
+module.exports = main();

@@ -13,7 +13,7 @@ npm install --dev @pixi-build-tools/rollup-configurator
 ### as a Rollup configuration
 
 ```
-rollup -c @pixi-build-tools/rollup-configurator
+rollup -c node_modules/\@pixi-build-tools/rollup-configurator/index.js
 ```
 
 ### in your custom configuration

@@ -2,12 +2,12 @@ const fs = require('fs');
 const path = require('path');
 const { globals } = require('@pixi-build-tools/globals');
 
-const resolve = require('rollup-plugin-node-resolve').default;
+const resolve = require('rollup-plugin-node-resolve');
 const string = require('rollup-plugin-string').string;
-const sourcemaps = require('rollup-plugin-sourcemaps').default;
+const sourcemaps = require('rollup-plugin-sourcemaps');
 const typescript = require('rollup-plugin-typescript');
-const commonjs = require('rollup-plugin-commonjs').default;
-const replace = require('rollup-plugin-replace').default;
+const commonjs = require('rollup-plugin-commonjs');
+const replace = require('rollup-plugin-replace');
 
 const projectFolder = process.cwd();
 const packageJsonPath = path.relative(__dirname, path.join(projectFolder, './package.json'));
@@ -21,7 +21,7 @@ const pkgAuthor = pkg.author;
  * 
  * @param {object}[options]
  * @param {boolean}[options.sourcemap=true] - whether to output sourcemaps
- * @param {string[]}[options.externals] - list of dependencies to not be compiled into the bundle. By default,
+ * @param {string[]}[options.external] - list of dependencies to not be compiled into the bundle. By default,
  *  this includes all your dependencies & peer-dependencies.
  * @param {string}[options.input] - entry file for your library. By default, this is `src/index.ts` or `src/index.js` -
  *  whichever is found.
@@ -55,12 +55,12 @@ exports.main = function main(options) {
             ],
         }),
         replace({
-            __VERSION__: repo.version,
+            __VERSION__: pkg.version,
         }),
     ];
 
     const compiled = (new Date()).toUTCString().replace(/GMT/g, 'UTC');
-    const banner = [
+    let banner = [
         `/* eslint-disable */`,
         ` `,
         `/*!`,
@@ -107,7 +107,8 @@ exports.main = function main(options) {
         throw new Error(`Unable to resolve entry file: <projectFolder>/src/index.(js|ts) do not exist?`)
     }
 
-    const externals = []
+    const external = []
+        .concat(options.external || [])
         .concat(Object.keys(pkg.peerDependencies || {}))
         .concat(Object.keys(pkg.dependencies || {}));
 
@@ -154,7 +155,7 @@ exports.main = function main(options) {
 
         // Allow namespaces upto 2-depth (like PIXI.tilemap)
         if (ns.includes('.')) {
-            const base = ns.split(.)[0];
+            const base = ns.split('.')[0];
 
             banner += `\nthis.${base} = this.${base} || {};`;
         }
