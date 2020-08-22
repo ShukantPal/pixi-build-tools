@@ -1,0 +1,31 @@
+{
+  "name": "@pixi-build-tools/globals",
+  "version": "1.0.0",
+  "description": "Exports globals for popular PixiJS libraries",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SukantPal/pixi-build-tools.git"
+  },
+  "keywords": [
+    "pixijs",
+    "build",
+    "globals",
+    "rollup"
+  ],
+  "files": [
+    "essentials.js",
+    "filters.js",
+    "index.js",
+    "main.js",
+    "plugins.js",
+    "puxi.js"
+  ],
+  "author": "Shukant K. Pal <shukantpal@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SukantPal/pixi-build-tools/issues"
+  },
+  "homepage": "https://github.com/SukantPal/pixi-build-tools#readme"
+}
