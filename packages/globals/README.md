@@ -25,6 +25,7 @@ Feel free to create a PR if you want to add your own PixiJS library to this pack
 Additional plugins made by individual authors:
 
 | Author                     | Namespaces                     |
+| -------------------------- | ------------------------------ |
 | David Fignater             | Cull, Ease, ScrollBox, Viewport. Intersects, RenderSheet |
 | Ivan Popleyshev            | PIXI                           |
 | Nazari Gonzalez            | PIXI.audio, PIXI.tween, PIXI.keyboard |
