@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.29.1",
+  "pnpmVersion": "4.14.4",
+  "pnpmOptions": {
+    "pnpmStore": "global",
+    "strictPeerDependencies": true,
+    "resolutionStrategy": "fast",
+    "preventManualShrinkwrapChanges": true,
+    "useWorkspaces": false
+  },
+  "nodeSupportedVersionRange": ">=12.13.0 <15.0.0",
+  "suppressNodeLtsWarning": true,
+  "ensureConsistentVersions": false,
+  "projectFolderMinDepth": 2,
+  "projectFolderMaxDepth": 3,
+  "repository": {
+    "url": "https://github.com/SukantPal/pixi-build-tools",
+    "defaultBranch": "master",
+    "defaultRemote": "origin"
+  },
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+  "projects": [
+    {
+      "packageName": "@pixi-build-tools/globals",
+      "projectFolder": "packages/globals",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    }
+  ]
+}
