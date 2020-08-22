@@ -1,6 +1,6 @@
 {
   "name": "@pixi-build-tools/globals",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Exports globals for popular PixiJS libraries",
   "main": "index.js",
   "scripts": {},

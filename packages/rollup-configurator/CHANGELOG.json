@@ -1,0 +1,22 @@
+{
+  "name": "@pixi-build-tools/rollup-configurator",
+  "entries": [
+    {
+      "version": "1.0.1",
+      "tag": "@pixi-build-tools/rollup-configurator_v1.0.1",
+      "date": "Sat, 22 Aug 2020 20:47:32 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "First release!"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@pixi-build-tools/globals\" from `~1.0.1` to `~1.0.2`"
+          }
+        ]
+      }
+    }
+  ]
+}
