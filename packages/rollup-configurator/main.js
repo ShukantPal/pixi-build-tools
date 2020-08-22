@@ -6,7 +6,7 @@ const resolve = require('rollup-plugin-node-resolve');
 const string = require('rollup-plugin-string').string;
 const sourcemaps = require('rollup-plugin-sourcemaps');
 const typescript = require('rollup-plugin-typescript');
-const commonjs = require('rollup-plugin-commonjs');
+const commonjs = require('@rollup/plugin-commonjs');
 const replace = require('rollup-plugin-replace');
 
 const projectFolder = process.cwd();
@@ -44,7 +44,7 @@ exports.main = function main(options) {
         }),
         commonjs({
             namedExports: {
-                'resource-loader': ['Resource'],
+                'resource-loader': ['Resource']
             },
         }),
         typescript(),
@@ -114,6 +114,7 @@ exports.main = function main(options) {
 
     const config = {
         plugins,
+        external,
         input,
         output: []
     };
