@@ -1,0 +1,17 @@
+{
+  "name": "@pixi-build-tools/globals",
+  "entries": [
+    {
+      "version": "1.0.1",
+      "tag": "@pixi-build-tools/globals_v1.0.1",
+      "date": "Sat, 22 Aug 2020 02:55:15 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Initial publish"
+          }
+        ]
+      }
+    }
+  ]
+}
