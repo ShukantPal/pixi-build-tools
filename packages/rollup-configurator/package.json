@@ -1,6 +1,6 @@
 {
   "name": "@pixi-build-tools/rollup-configurator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Opinionated rollup configuration for PixiJS libraries",
   "main": "index.js",
   "scripts": {
