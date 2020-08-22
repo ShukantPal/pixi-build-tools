@@ -27,6 +27,12 @@
   },
   "projects": [
     {
+      "packageName": "@pixi-build-tools/floss-rush-monorepo",
+      "projectFolder": "packages/floss-rush-monorepo",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
       "packageName": "@pixi-build-tools/rollup-configurator",
       "projectFolder": "packages/rollup-configurator",
       "reviewCategory": "production",

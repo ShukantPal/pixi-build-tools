@@ -1,0 +1,33 @@
+{
+  "name": "@pixi-build-tools/floss-rush-monorepo",
+  "version": "1.0.0",
+  "description": "Unit-testing the PixiJS way!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SukantPal/pixi-build-tools.git"
+  },
+  "keywords": [
+    "rush",
+    "pixijs",
+    "test",
+    "floss",
+    "unit-test",
+    "mocha"
+  ],
+  "author": "Shukant K. Pal <shukantpal@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SukantPal/pixi-build-tools/issues"
+  },
+  "homepage": "https://github.com/SukantPal/pixi-build-tools#readme",
+  "dependencies": {
+    "@microsoft/rush-lib": "~5.33.2",
+    "chai": "~4.2.0",
+    "sinon": "~9.0.3",
+    "sinon-chai": "~3.5.0"
+  }
+}
