@@ -42,11 +42,7 @@ exports.main = function main(options) {
             browser: true,
             preferBuiltins: false,
         }),
-        commonjs({
-            namedExports: {
-                'resource-loader': ['Resource']
-            },
-        }),
+        commonjs({ }),
         typescript(),
         string({
             include: [
