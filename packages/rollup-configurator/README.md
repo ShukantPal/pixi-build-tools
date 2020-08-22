@@ -31,6 +31,7 @@ in the bundle; to prevent this, set `standalone` in your `package.json`.
 The following table summarizes the fields you might need to fill:
 
 | Field            | Recommended              | Description                              |
+| ---------------- | ------------------------ | ---------------------------------------- |
 | `main`           | :white_check_mark:       | Output path for CommonJS bundle          |
 | `module`         | :white_check_mark:       | Output path for ESM bundle               |
 | `bundle`         | :white_check_mark:       | Output path for UMD bundle. In production mode, will also produce a minified bundle with a `.min.js` extension |
