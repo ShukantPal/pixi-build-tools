@@ -1,0 +1,17 @@
+{
+  "name": "@pixi-build-tools/floss-rush-monorepo",
+  "entries": [
+    {
+      "version": "1.0.1",
+      "tag": "@pixi-build-tools/floss-rush-monorepo_v1.0.1",
+      "date": "Sat, 22 Aug 2020 22:23:38 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "First release!"
+          }
+        ]
+      }
+    }
+  ]
+}

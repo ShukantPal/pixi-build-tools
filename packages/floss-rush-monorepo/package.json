@@ -1,6 +1,6 @@
 {
   "name": "@pixi-build-tools/floss-rush-monorepo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unit-testing the PixiJS way!",
   "main": "index.js",
   "scripts": {
