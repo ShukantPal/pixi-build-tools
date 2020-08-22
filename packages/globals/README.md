@@ -9,7 +9,7 @@ source of this information so you do not have to configure dependency globals yo
 npm install --dev @pixi-build-tools/globals
 ```
 
-## Globals
+## Globals :page_facing_up:
 
 Feel free to create a PR if you want to add your own PixiJS library to this package.
 
