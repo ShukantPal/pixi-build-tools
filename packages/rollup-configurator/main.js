@@ -23,6 +23,9 @@ const pkgAuthor = pkg.author;
  * @param {boolean}[options.sourcemap=true] - whether to output sourcemaps
  * @param {string[]}[options.external] - list of dependencies to not be compiled into the bundle. By default,
  *  this includes all your dependencies & peer-dependencies.
+ * @param {string}[options.main] - override CJS output
+ * @param {string}[options.module] - override ESM output
+ * @param {string}[options.bundle] - override UMD output
  * @param {string}[options.input] - entry file for your library. By default, this is `src/index.ts` or `src/index.js` -
  *  whichever is found.
  * @param {boolean}[options.production=false] - whether to produced minifed UMD bundle
@@ -115,24 +118,24 @@ exports.main = function main(options) {
         output: []
     };
 
-    if (main) {
+    if (options.main || main) {
         config.output.push({
             banner,
-            file: path.join(projectFolder, main),
+            file: path.join(projectFolder, options.main || main),
             format: 'cjs',
             sourcemap: options.sourcemap
         });
     }
-    if (module) {
+    if (options.module || module) {
         config.output.push({
             banner,
-            file: path.join(projectFolder, module),
+            file: path.join(projectFolder, options.module || module),
             format: 'esm',
             sourcemap: options.sourcemap
         });
     }
 
-    if (!bundle) {
+    if (!options.bundle && !bundle) {
         // No UMD bundle, we're done!
         return [config];
     }
@@ -160,12 +163,14 @@ exports.main = function main(options) {
         banner += `\nthis.${ns} = this.${ns} || {};`;
     }
 
+    const file = path.join(projectFolder, options.bundle || bundle);
+
     results.push({
         input,
         external,
         output: Object.assign({
             banner,
-            file: path.join(projectFolder, bundle),
+            file,
             format: 'umd',
             globals: { ...globals, ...options.globals },
             name,
