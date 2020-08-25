@@ -1,6 +1,13 @@
 # Change Log - @pixi-build-tools/rollup-configurator
 
-This log was last generated on Sat, 22 Aug 2020 21:44:10 GMT and should not be manually modified.
+This log was last generated on Tue, 25 Aug 2020 21:38:56 GMT and should not be manually modified.
+
+## 1.0.4
+Tue, 25 Aug 2020 21:38:56 GMT
+
+### Patches
+
+- Add options to override CommonJS, ESM, and UMD bundle output locations
 
 ## 1.0.3
 Sat, 22 Aug 2020 21:44:10 GMT
