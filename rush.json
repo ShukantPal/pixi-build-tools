@@ -27,6 +27,12 @@
   },
   "projects": [
     {
+      "packageName": "@pixi-build-tools/api-extractor-lerna-monorepo",
+      "projectFolder": "packages/api-extractor-lerna-monorepo",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
       "packageName": "@pixi-build-tools/floss-rush-monorepo",
       "projectFolder": "packages/floss-rush-monorepo",
       "reviewCategory": "production",

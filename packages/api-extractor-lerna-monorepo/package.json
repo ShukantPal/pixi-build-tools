@@ -1,0 +1,34 @@
+{
+  "name": "@pixi-build-tools/api-extractor-lerna-monorepo",
+  "version": "1.0.0",
+  "description": "Run @microsoft/api-extractor on all TypeScript packages in a Lerna monorepo!",
+  "main": "index.js",
+  "devDependencies": {
+    "@microsoft/api-extractor": "~7.9.11"
+  },
+  "bin": {
+    "api-extractor-lerna-monorepo": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SukantPal/pixi-build-tools.git"
+  },
+  "keywords": [
+    "pixijs",
+    "api-extractor",
+    "monorepo",
+    "lerna"
+  ],
+  "author": "Shukant K. Pal <shukantpal@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SukantPal/pixi-build-tools/issues"
+  },
+  "homepage": "https://github.com/SukantPal/pixi-build-tools#readme",
+  "dependencies": {
+    "@lerna/project": "~3.21.0"
+  },
+  "peerDependencies": {
+    "typescript": "^3.7.0"
+  }
+}
