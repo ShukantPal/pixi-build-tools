@@ -1,6 +1,6 @@
 {
   "name": "@pixi-build-tools/api-extractor-lerna-monorepo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Run @microsoft/api-extractor on all TypeScript packages in a Lerna monorepo!",
   "main": "index.js",
   "devDependencies": {
