@@ -150,7 +150,7 @@ exports.main = function main(options) {
     // Standalone packages do not export anything into a namespace
     if (!standalone) {
         if (bundleNoExports !== true) {
-            footer = `Object.assign(this.${ns}, ${name});`
+            footer = `if (typeof ${name} !== 'undefined') { Object.assign(this.${ns}, ${name}); }`
         }
 
         // Allow namespaces upto 2-depth (like PIXI.tilemap)
