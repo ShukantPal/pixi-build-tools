@@ -1,6 +1,13 @@
 # Change Log - @pixi-build-tools/rollup-configurator
 
-This log was last generated on Tue, 25 Aug 2020 21:38:56 GMT and should not be manually modified.
+This log was last generated on Sun, 30 Aug 2020 20:40:18 GMT and should not be manually modified.
+
+## 1.0.5
+Sun, 30 Aug 2020 20:40:18 GMT
+
+### Patches
+
+- This fixes crashes when a UMD bundle is used in a non-browser environment.
 
 ## 1.0.4
 Tue, 25 Aug 2020 21:38:56 GMT
