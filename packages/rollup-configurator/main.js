@@ -47,6 +47,7 @@ exports.main = function main(options) {
         }),
         commonjs({ }),
         sucrase({
+            include: ["**/*.ts"],
             transforms: ['typescript']
         }),
         string({
