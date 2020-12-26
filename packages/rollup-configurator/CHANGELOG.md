@@ -1,6 +1,13 @@
 # Change Log - @pixi-build-tools/rollup-configurator
 
-This log was last generated on Sat, 26 Dec 2020 23:49:38 GMT and should not be manually modified.
+This log was last generated on Sat, 26 Dec 2020 23:56:39 GMT and should not be manually modified.
+
+## 1.0.7
+Sat, 26 Dec 2020 23:56:39 GMT
+
+### Patches
+
+- Fix bug where sucrase would run on shaders.
 
 ## 1.0.6
 Sat, 26 Dec 2020 23:49:38 GMT
