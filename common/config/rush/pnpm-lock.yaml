@@ -3,6 +3,8 @@ dependencies:
   '@microsoft/api-extractor': 7.9.11
   '@microsoft/rush-lib': 5.33.2
   '@rollup/plugin-commonjs': 15.0.0
+  '@rollup/plugin-sucrase': 3.1.0
+  '@rollup/plugin-typescript': 8.1.0_tslib@2.0.1
   '@rush-temp/api-extractor-lerna-monorepo': 'file:projects/api-extractor-lerna-monorepo.tgz'
   '@rush-temp/floss-rush-monorepo': 'file:projects/floss-rush-monorepo.tgz'
   '@rush-temp/globals': 'file:projects/globals.tgz'
@@ -14,11 +16,9 @@ dependencies:
   rollup-plugin-sourcemaps: 0.6.2_@types+node@14.6.0
   rollup-plugin-string: 3.0.0
   rollup-plugin-terser: 7.0.0
-  rollup-plugin-typescript: 1.0.1_tslib@2.0.1+typescript@4.0.2
   sinon: 9.0.3
   sinon-chai: 3.5.0_chai@4.2.0+sinon@9.0.3
   tslib: 2.0.1
-  typescript: 4.0.2
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.10.4:
@@ -297,6 +297,59 @@ packages:
       rollup: ^2.22.0
     resolution:
       integrity: sha512-8uAdikHqVyrT32w1zB9VhW6uGwGjhKgnDNP4pQJsjdnyF4FgCj6/bmv24c7v2CuKhq32CcyCwRzMPEElaKkn0w==
+  /@rollup/plugin-sucrase/3.1.0:
+    dependencies:
+      '@rollup/pluginutils': 3.1.0
+      sucrase: 3.16.0
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0 || ^2.0.0
+    resolution:
+      integrity: sha512-PZ70LDNgIj8rL+3pKwKwTBOQ2c9JofXeLbWz+2V4/nCt4LqwYTNqxJJf1riTJsVARVzJdA0woIzUzjKZvL8TfA==
+  /@rollup/plugin-sucrase/3.1.0_rollup@2.26.4:
+    dependencies:
+      '@rollup/pluginutils': 3.1.0_rollup@2.26.4
+      rollup: 2.26.4
+      sucrase: 3.16.0
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0 || ^2.0.0
+    resolution:
+      integrity: sha512-PZ70LDNgIj8rL+3pKwKwTBOQ2c9JofXeLbWz+2V4/nCt4LqwYTNqxJJf1riTJsVARVzJdA0woIzUzjKZvL8TfA==
+  /@rollup/plugin-typescript/8.1.0_e72d7a894dae22af0f95d9f767eb270c:
+    dependencies:
+      '@rollup/pluginutils': 3.1.0_rollup@2.26.4
+      resolve: 1.17.0
+      rollup: 2.26.4
+      tslib: 2.0.1
+      typescript: 4.0.2
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    peerDependencies:
+      rollup: ^2.14.0
+      tslib: '*'
+      typescript: '>=3.4.0'
+    resolution:
+      integrity: sha512-pyQlcGQYRsONUDwXK3ckGPHjPzmjlq4sinzr7emW8ZMb2oZjg9WLcdcP8wyHSvBjvHrLzMayyPy079RROqb4vw==
+  /@rollup/plugin-typescript/8.1.0_tslib@2.0.1:
+    dependencies:
+      '@rollup/pluginutils': 3.1.0
+      resolve: 1.17.0
+      tslib: 2.0.1
+    dev: false
+    engines:
+      node: '>=8.0.0'
+    peerDependencies:
+      rollup: ^2.14.0
+      tslib: '*'
+      typescript: '>=3.4.0'
+    resolution:
+      integrity: sha512-pyQlcGQYRsONUDwXK3ckGPHjPzmjlq4sinzr7emW8ZMb2oZjg9WLcdcP8wyHSvBjvHrLzMayyPy079RROqb4vw==
   /@rollup/pluginutils/3.1.0:
     dependencies:
       '@types/estree': 0.0.39
@@ -915,6 +968,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+  /commander/4.1.1:
+    dev: false
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
   /commondir/1.0.1:
     dev: false
     resolution:
@@ -2577,6 +2636,12 @@ packages:
       node: 4.x || >=6.0.0
     resolution:
       integrity: sha1-q4hOjn5X44qUR1POxwb3iNF2i7U=
+  /node-modules-regexp/1.0.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-jZ2+KJZKSsVxLpExZCEHxx6Q7EA=
   /normalize-package-data/2.5.0:
     dependencies:
       hosted-git-info: 2.8.8
@@ -2916,6 +2981,14 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
+  /pirates/4.0.1:
+    dependencies:
+      node-modules-regexp: 1.0.0
+    dev: false
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-WuNqLTbMI3tmfef2TKxlQmAiLHKtFhlsCZnPIpuv2Ow0RDVO8lfy1Opf4NUzlMXLjPl+Men7AuVdX6TA+s+uGA==
   /posix-character-classes/0.1.1:
     dev: false
     engines:
@@ -3634,6 +3707,20 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-VTyMAUfdm047mwKl+u79WIdrZxtFtn+nBxHeb844XBQ9uMNTuTHdx2hc5RiAJYqwTj3wc/xe5HLSdJSkJ+WfZw==
+  /sucrase/3.16.0:
+    dependencies:
+      commander: 4.1.1
+      glob: 7.1.6
+      lines-and-columns: 1.1.6
+      mz: 2.7.0
+      pirates: 4.0.1
+      ts-interface-checker: 0.1.13
+    dev: false
+    engines:
+      node: '>=8'
+    hasBin: true
+    resolution:
+      integrity: sha512-ovVuswxV5TayCPXfTk8bgBgk6uNRvsinIkEpq0J6zS1xXCx5N/LLGcbsKdRhqn/ToZylMX6+yXaR1LSn1I42Pg==
   /sumchecker/3.0.1:
     dependencies:
       debug: 4.1.1
@@ -3772,6 +3859,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-QFkjkJWS1W94pYGENLC3hInKXys=
+  /ts-interface-checker/0.1.13:
+    dev: false
+    resolution:
+      integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
   /tslib/1.13.0:
     dev: false
     resolution:
@@ -4109,10 +4200,11 @@ packages:
     dependencies:
       '@lerna/project': 3.21.0
       '@microsoft/api-extractor': 7.9.11
+      typescript: 3.9.7
     dev: false
     name: '@rush-temp/api-extractor-lerna-monorepo'
     resolution:
-      integrity: sha512-X3AoJbOfeOJwKeoTw68rDvleyjASgEY+fXw222lkqoPQ39j2bovsxzIgvtexHUj2Dy4YReRFRpXxArf2oG4V9A==
+      integrity: sha512-X1FxN62y+gOdnDeHhubHmLQPr7np/be2/s8bHMft0dqa37PtCcIUo/SDhNz6TBcfAONIKB7XgqW/QlgGpWCkHQ==
       tarball: 'file:projects/api-extractor-lerna-monorepo.tgz'
     version: 0.0.0
   'file:projects/floss-rush-monorepo.tgz':
@@ -4140,6 +4232,8 @@ packages:
   'file:projects/rollup-configurator.tgz':
     dependencies:
       '@rollup/plugin-commonjs': 15.0.0_rollup@2.26.4
+      '@rollup/plugin-sucrase': 3.1.0_rollup@2.26.4
+      '@rollup/plugin-typescript': 8.1.0_e72d7a894dae22af0f95d9f767eb270c
       '@types/node': 14.6.0
       rollup: 2.26.4
       rollup-plugin-commonjs: 10.1.0_rollup@2.26.4
@@ -4154,7 +4248,7 @@ packages:
     dev: false
     name: '@rush-temp/rollup-configurator'
     resolution:
-      integrity: sha512-CwBt/RTBbL2sWigKQAnqGMoZNUZ8c6EvxN5RTrGJru+wgSuZ4lFdYKtxH51OQdRwd8O+ytNKGBD0/YAV6Vsu2w==
+      integrity: sha512-2nsdml3x36To7PnAChR4KWOJCnMFZibJitChZco4tzY4Tx/pisDN2yL2Qgr81NWHgi0ZQ/bjjnKBL2R8RvvkRQ==
       tarball: 'file:projects/rollup-configurator.tgz'
     version: 0.0.0
 registry: ''
@@ -4163,6 +4257,8 @@ specifiers:
   '@microsoft/api-extractor': ~7.9.11
   '@microsoft/rush-lib': ~5.33.2
   '@rollup/plugin-commonjs': ~15.0.0
+  '@rollup/plugin-sucrase': ~3.1.0
+  '@rollup/plugin-typescript': ~8.1.0
   '@rush-temp/api-extractor-lerna-monorepo': 'file:./projects/api-extractor-lerna-monorepo.tgz'
   '@rush-temp/floss-rush-monorepo': 'file:./projects/floss-rush-monorepo.tgz'
   '@rush-temp/globals': 'file:./projects/globals.tgz'
@@ -4174,8 +4270,6 @@ specifiers:
   rollup-plugin-sourcemaps: ~0.6.2
   rollup-plugin-string: ~3.0.0
   rollup-plugin-terser: ~7.0.0
-  rollup-plugin-typescript: ~1.0.1
   sinon: ~9.0.3
   sinon-chai: ~3.5.0
   tslib: ~2.0.1
-  typescript: ~4.0.2

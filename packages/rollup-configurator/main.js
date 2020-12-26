@@ -5,7 +5,7 @@ const { globals } = require('@pixi-build-tools/globals');
 const resolve = require('rollup-plugin-node-resolve');
 const string = require('rollup-plugin-string').string;
 const sourcemaps = require('rollup-plugin-sourcemaps');
-const typescript = require('rollup-plugin-typescript');
+const sucrase = require('@rollup/plugin-sucrase');
 const commonjs = require('@rollup/plugin-commonjs');
 const replace = require('rollup-plugin-replace');
 
@@ -46,7 +46,9 @@ exports.main = function main(options) {
             preferBuiltins: false,
         }),
         commonjs({ }),
-        typescript(),
+        sucrase({
+            transforms: ['typescript']
+        }),
         string({
             include: [
                 '**/*.frag',
