@@ -1,6 +1,13 @@
 # Change Log - @pixi-build-tools/globals
 
-This log was last generated on Sun, 31 Jan 2021 03:53:22 GMT and should not be manually modified.
+This log was last generated on Sun, 31 Jan 2021 04:17:35 GMT and should not be manually modified.
+
+## 1.0.5
+Sun, 31 Jan 2021 04:17:35 GMT
+
+### Patches
+
+- Fix in-built filters namespace to PIXI.filters
 
 ## 1.0.4
 Sun, 31 Jan 2021 03:53:22 GMT
