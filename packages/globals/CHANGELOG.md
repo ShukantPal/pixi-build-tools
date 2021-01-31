@@ -1,6 +1,13 @@
 # Change Log - @pixi-build-tools/globals
 
-This log was last generated on Sat, 22 Aug 2020 20:47:32 GMT and should not be manually modified.
+This log was last generated on Sun, 31 Jan 2021 03:27:35 GMT and should not be manually modified.
+
+## 1.0.3
+Sun, 31 Jan 2021 03:27:35 GMT
+
+### Patches
+
+- Add globals for @pixi/compressed-textures, @pixi-essentials/gradients, @pixi-essentials/texture-allocator
 
 ## 1.0.2
 Sat, 22 Aug 2020 20:47:32 GMT
