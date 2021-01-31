@@ -2,6 +2,18 @@
   "name": "@pixi-build-tools/globals",
   "entries": [
     {
+      "version": "1.0.4",
+      "tag": "@pixi-build-tools/globals_v1.0.4",
+      "date": "Sun, 31 Jan 2021 03:53:22 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add built-in filters and canvas packages to main category"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.3",
       "tag": "@pixi-build-tools/globals_v1.0.3",
       "date": "Sun, 31 Jan 2021 03:27:35 GMT",
