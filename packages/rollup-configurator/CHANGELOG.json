@@ -2,6 +2,18 @@
   "name": "@pixi-build-tools/rollup-configurator",
   "entries": [
     {
+      "version": "1.0.10",
+      "tag": "@pixi-build-tools/rollup-configurator_v1.0.10",
+      "date": "Sun, 31 Jan 2021 04:18:07 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Bump globals dep"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.9",
       "tag": "@pixi-build-tools/rollup-configurator_v1.0.9",
       "date": "Sun, 31 Jan 2021 03:54:39 GMT",
