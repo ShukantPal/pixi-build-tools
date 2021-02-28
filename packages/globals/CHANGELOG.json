@@ -2,6 +2,18 @@
   "name": "@pixi-build-tools/globals",
   "entries": [
     {
+      "version": "1.0.6",
+      "tag": "@pixi-build-tools/globals_v1.0.6",
+      "date": "Sun, 28 Feb 2021 01:50:48 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix @pixi/utils namespace to be PIXI.utils"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.5",
       "tag": "@pixi-build-tools/globals_v1.0.5",
       "date": "Sun, 31 Jan 2021 04:17:35 GMT",

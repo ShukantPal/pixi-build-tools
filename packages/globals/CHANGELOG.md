@@ -1,6 +1,13 @@
 # Change Log - @pixi-build-tools/globals
 
-This log was last generated on Sun, 31 Jan 2021 04:17:35 GMT and should not be manually modified.
+This log was last generated on Sun, 28 Feb 2021 01:50:48 GMT and should not be manually modified.
+
+## 1.0.6
+Sun, 28 Feb 2021 01:50:48 GMT
+
+### Patches
+
+- Fix @pixi/utils namespace to be PIXI.utils
 
 ## 1.0.5
 Sun, 31 Jan 2021 04:17:35 GMT
