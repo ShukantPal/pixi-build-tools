@@ -45,7 +45,7 @@ exports.globals = {
     '@pixi/text': 'PIXI',
     '@pixi/ticker': 'PIXI',
     '@pixi/unsafe-eval': 'PIXI',
-    '@pixi/utils': 'PIXI',
+    '@pixi/utils': 'PIXI.utils',
     'pixi.js': 'PIXI',
     'pixi.js-legacy': 'PIXI'
 };
