@@ -1,6 +1,13 @@
 # Change Log - @pixi-build-tools/rollup-configurator
 
-This log was last generated on Sun, 31 Jan 2021 04:18:07 GMT and should not be manually modified.
+This log was last generated on Sun, 28 Feb 2021 01:51:19 GMT and should not be manually modified.
+
+## 1.0.11
+Sun, 28 Feb 2021 01:51:19 GMT
+
+### Patches
+
+- Bump globals dependency
 
 ## 1.0.10
 Sun, 31 Jan 2021 04:18:07 GMT
