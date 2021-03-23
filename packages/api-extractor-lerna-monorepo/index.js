@@ -96,20 +96,19 @@ async function main({ tsconfigJson, showVerboseMessages } = {}) {
     } catch (e) {
         console.log(`${pkg.name} failed:`);
         console.error(e);
-        process.exitCode = 1;
-
-        return;
+        process.exit(1);
     }
 
     if (extractorResult.succeeded) {
       console.error(`${pkg.name}: completed successfully!`);
-      process.exitCode = 0;
     } else {
       console.error(`${pkg.name}: completed with ${extractorResult.errorCount} errors`
          + ` and ${extractorResult.warningCount} warnings`);
 
       // Don't bother fellas just because of warnings :D
-      process.exitCode = (extractorResult.errorCount > 0);
+      if (extractorResult.errorCount > 0) {
+          process.exit(1);
+      }
     }
   });
 }
