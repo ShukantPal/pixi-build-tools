@@ -2,6 +2,18 @@
   "name": "@pixi-build-tools/rollup-configurator",
   "entries": [
     {
+      "version": "1.0.13",
+      "tag": "@pixi-build-tools/rollup-configurator_v1.0.13",
+      "date": "Sun, 11 Apr 2021 17:48:14 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix terser error in production build"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.12",
       "tag": "@pixi-build-tools/rollup-configurator_v1.0.12",
       "date": "Sun, 11 Apr 2021 17:27:01 GMT",
