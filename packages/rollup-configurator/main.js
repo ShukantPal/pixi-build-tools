@@ -18,21 +18,22 @@ const pkgAuthor = pkg.author;
 
 /**
  * This method generates a rollup configuration suited for most PixiJS plugin libraries.
- * 
+ *
  * @param {object}[options]
  * @param {boolean}[options.sourcemap=true] - whether to output sourcemaps
  * @param {string[]}[options.external] - list of dependencies to not be compiled into the bundle. By default,
  *  this includes all your dependencies & peer-dependencies.
+ * @param {string[]}[options.excludedExternals] - list of dependencies to filter out from externals.
  * @param {string}[options.main] - override CJS output
  * @param {string}[options.module] - override ESM output
  * @param {string}[options.bundle] - override UMD output
  * @param {string}[options.input] - entry file for your library. By default, this is `src/index.ts` or `src/index.js` -
  *  whichever is found.
  * @param {boolean}[options.production=false] - whether to produced minifed UMD bundle
- * @returns an array of upto four rollup configurations, one for CommonJS & ESM bundles & the other two for 
+ * @returns an array of upto four rollup configurations, one for CommonJS & ESM bundles & the other two for
  * unminified & minifed UMD bundles. The minified bundle is generated only in production env or if `options.production` is true.
  */
-exports.main = function main(options) {    
+exports.main = function main(options) {
     options = Object.assign({
         sourcemap: true,
         globals: {},
@@ -112,7 +113,8 @@ exports.main = function main(options) {
     const external = []
         .concat(options.external || [])
         .concat(Object.keys(pkg.peerDependencies || {}))
-        .concat(Object.keys(pkg.dependencies || {}));
+        .concat(Object.keys(pkg.dependencies || {}))
+        .filter((pkg) => !options.excludedExternals?.includes(pkg));
 
     const config = {
         plugins,
