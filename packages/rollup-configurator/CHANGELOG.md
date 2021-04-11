@@ -1,6 +1,13 @@
 # Change Log - @pixi-build-tools/rollup-configurator
 
-This log was last generated on Sun, 11 Apr 2021 17:48:14 GMT and should not be manually modified.
+This log was last generated on Sun, 11 Apr 2021 17:58:37 GMT and should not be manually modified.
+
+## 1.0.14
+Sun, 11 Apr 2021 17:58:37 GMT
+
+### Patches
+
+- Fix syntax error in 1.0.13
 
 ## 1.0.13
 Sun, 11 Apr 2021 17:48:14 GMT
