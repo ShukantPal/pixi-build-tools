@@ -1,6 +1,13 @@
 # Change Log - @pixi-build-tools/rollup-configurator
 
-This log was last generated on Sun, 28 Feb 2021 01:51:19 GMT and should not be manually modified.
+This log was last generated on Sun, 11 Apr 2021 17:27:01 GMT and should not be manually modified.
+
+## 1.0.12
+Sun, 11 Apr 2021 17:27:01 GMT
+
+### Patches
+
+- Add excludedExternals option
 
 ## 1.0.11
 Sun, 28 Feb 2021 01:51:19 GMT
