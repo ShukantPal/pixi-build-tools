@@ -8,6 +8,7 @@ const sourcemaps = require('rollup-plugin-sourcemaps');
 const sucrase = require('@rollup/plugin-sucrase');
 const commonjs = require('@rollup/plugin-commonjs');
 const replace = require('rollup-plugin-replace');
+const { terser } = require('rollup-plugin-terser');
 
 const projectFolder = process.cwd();
 const packageJsonPath = path.relative(__dirname, path.join(projectFolder, './package.json'));
