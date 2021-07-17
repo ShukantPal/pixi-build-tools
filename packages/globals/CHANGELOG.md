@@ -1,6 +1,13 @@
 # Change Log - @pixi-build-tools/globals
 
-This log was last generated on Sun, 28 Feb 2021 01:50:48 GMT and should not be manually modified.
+This log was last generated on Sat, 17 Jul 2021 13:35:06 GMT and should not be manually modified.
+
+## 1.0.7
+Sat, 17 Jul 2021 13:35:06 GMT
+
+### Patches
+
+- Add global=PIXI for @pixi/sprite-animated
 
 ## 1.0.6
 Sun, 28 Feb 2021 01:50:48 GMT
