@@ -40,6 +40,7 @@ exports.globals = {
     '@pixi/runner': 'PIXI',
     '@pixi/settings': 'PIXI',
     '@pixi/sprite': 'PIXI',
+    '@pixi/sprite-animated': 'PIXI',
     '@pixi/sprite-tiling': 'PIXI',
     '@pixi/spritesheet': 'PIXI',
     '@pixi/text': 'PIXI',
