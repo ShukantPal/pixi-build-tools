@@ -16,7 +16,7 @@
   "projectFolderMaxDepth": 3,
   "repository": {
     "url": "https://github.com/SukantPal/pixi-build-tools",
-    "defaultBranch": "master",
+    "defaultBranch": "release",
     "defaultRemote": "origin"
   },
   "eventHooks": {
