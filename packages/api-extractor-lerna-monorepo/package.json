@@ -1,10 +1,10 @@
 {
   "name": "@pixi-build-tools/api-extractor-lerna-monorepo",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Run @microsoft/api-extractor on all TypeScript packages in a Lerna monorepo!",
   "main": "index.js",
   "devDependencies": {
-    "@microsoft/api-extractor": "~7.9.11"
+    "@microsoft/api-extractor": "~7.21.1"
   },
   "bin": {
     "api-extractor-lerna-monorepo": "./cli.js"
@@ -26,10 +26,10 @@
   },
   "homepage": "https://github.com/SukantPal/pixi-build-tools#readme",
   "dependencies": {
-    "@lerna/project": "~3.21.0"
+    "@lerna/project": "^4.0.0"
   },
   "peerDependencies": {
-    "typescript": "^3.7.0"
+    "typescript": "^4.0.0"
   },
   "files": [
     "index.js",
