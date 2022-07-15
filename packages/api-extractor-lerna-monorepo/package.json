@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/SukantPal/pixi-build-tools#readme",
   "dependencies": {
-    "@lerna/project": "^4.0.0"
+    "@lerna/project": "^5.0.0"
   },
   "peerDependencies": {
     "typescript": "^4.0.0"
